@@ -14,5 +14,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - name: Build and test
+      run: ./mvnw clean package
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag demo-app-1-image:$(date +%s)
+      run: | 
+        docker build -t robdillon/demoapp1 .
+        docker tag my-spring-boot-app my-docker-registry/robdillon/demoapp1
+        docker push my-docker-registry/robdillon/demoapp1
+
