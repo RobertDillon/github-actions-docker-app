@@ -24,6 +24,6 @@ jobs:
     - name: Build the Docker image
       run: | 
         docker build -t robdillon/demoapp1 .
-        docker tag my-spring-boot-app my-docker-registry/robdillon/demoapp1
+        docker tag robdillon/demoapp1 my-docker-registry/robdillon/demoapp1
         docker push my-docker-registry/robdillon/demoapp1
 
