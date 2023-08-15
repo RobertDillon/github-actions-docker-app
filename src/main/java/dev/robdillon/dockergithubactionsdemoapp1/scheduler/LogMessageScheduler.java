@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @Component
 public class LogMessageScheduler {
 
+    
     @Scheduled(fixedRate = 30000)
     public void printMessage() {
         System.out.println("Hello from Docker Demo App 1! This is version 0.0.2");
