@@ -10,7 +10,7 @@
     </parent>
     <groupId>dev.robdillon</groupId>
     <artifactId>docker-github-actions-demo-app1</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.2-SNAPSHOT</version>
     <name>docker-github-actions-demo-app1</name>
     <description>docker-github-actions-demo-app1</description>
     <properties>
