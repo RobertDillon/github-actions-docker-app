@@ -24,7 +24,7 @@ jobs:
         token: ${{ secrets.DO_API_PRIVATE_KEY }}
     - name: Log in to DigitalOcean Container Registry with short-lived credentials
       run: doctl registry login --expiry-seconds 1200
-      
+
     - name: Build the Docker image
       run: | 
         docker build -t robdillon/demoapp1 .
